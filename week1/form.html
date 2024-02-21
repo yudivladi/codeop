@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <title><Form></Form></title>
+  </head>
+  <body>
+    <style>
+    body {
+      background-image: url('https://cdn.pixabay.com/photo/2023/09/20/11/40/plants-8264654_1280.jpg');
+      background-repeat: space;
+      background-size: cover;
+     
+    }
+  </style>
+  
+  
+    <form action="/submit" method="post">
+      <p>
+      <!-- Поле введення тексту -->
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required />
+      <br />
+<p></p>
+      <!-- Поле введення електронної пошти -->
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required />
+      <br/>
+    <p></p>
+      <!-- Спадний селектор -->
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="">choose country</option>
+        <option value="ukraine">Spain</option>
+        <option value="usa">United States</option>
+        <option value="canada">Canada</option>
+        <option value="Ukraine">Ukraine</option>
+      </select>
+  <p></p>
+      <br />
+
+      <!-- Введення чисел -->
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" min="1" max="120" required />
+      <br />
+<p>
+
+</p>
+      <!-- Радіо-кнопки -->
+      <label>Gender:</label>
+      <input type="radio" id="male" name="gender" value="male" required />
+      <label for="male">male</label>
+      <input type="radio" id="female" name="gender" value="female" />
+      <label for="female">female</label>
+      <br />
+<p>
+     
+    
+    
+   
+
+
+
+
+
+
+</p>
+      <!-- Прапорці -->
+      <label for="terms">Agree with terms:</label>
+      <input type="checkbox" id="terms" name="terms" required />
+      <br />
+<p></p>
+      <!-- Текстова область -->
+      
+       
+      <textarea
+     
+       
+        rows="6"
+        cols="45"
+        required
+        placeholder="Type here..."
+      ></textarea required>
+      <br />
+
+<p>   <!-- Кнопка відправки -->
+  <input type="submit" value="submit" style="font-size: larger;font-weight: bold;"/>
+</form>
+
+
+   
+</html>
